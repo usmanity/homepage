@@ -1,18 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="min-h-screen flex justify-center items-center">
       <Head>
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome.</h1>
+      <main>
+        <h1 className="font-bold text-center align-middle text-2xl">
+          Welcome.
+        </h1>
       </main>
     </div>
   );
