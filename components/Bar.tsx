@@ -17,7 +17,7 @@ const pages = [
 
 const Bar = () => {
   return (
-    <div className="border border-slate-100 mx-10 my-6 rounded-md py-4 px-8 shadow-sm">
+    <div className="bg-white border border-slate-100 mx-10 my-6 rounded-md py-4 px-8 shadow-sm">
       <div className="flex">
         {pages.map((page) => {
           return (
