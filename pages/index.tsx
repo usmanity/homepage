@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="bg-white rounded-sm shadow-sm w-48 h-48 text-center flex mx-auto">
+        <div className="bg-white rounded-sm shadow-sm text-center flex mx-auto">
           <h1 className="font-bold align-middle text-2xl self-center">
             <span className="font-emoji">👋</span> Hello.
           </h1>
