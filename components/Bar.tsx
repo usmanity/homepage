@@ -21,7 +21,7 @@ const Bar = () => {
       <div className="flex">
         {pages.map((page) => {
           return (
-            <div className="mr-2" onClick={(page) => {}}>
+            <div className="mr-2" key="page.link" onClick={(page) => {}}>
               <Link href={page.link} key={page.title}>
                 {page.title}
               </Link>

@@ -10,7 +10,7 @@ const About = () => {
       >
         <h1 className="text-2xl font-semibold mb-2 -mt-2">About</h1>
         <div className="m-w-full">
-          <p>I'm a software engineer based in Portland, Oregon.</p>
+          <p>I&apos;m a software engineer based in Portland, Oregon.</p>
         </div>
       </div>
     </div>
