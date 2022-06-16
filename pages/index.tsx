@@ -8,6 +8,11 @@ const Home: NextPage = () => {
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293487990175847"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
 
       <main>
