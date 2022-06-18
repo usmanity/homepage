@@ -6,7 +6,6 @@ const Home: NextPage = () => {
     <div
       className="
       flex flex-col h-screen max-h-min
-      lg:text-3xl md:text-lg sm:text-md
     "
     >
       <Head>
@@ -22,12 +21,15 @@ const Home: NextPage = () => {
 
       <main className="h-full">
         <div
-          className=" flex flex-col h-full justify-center text-center
+          className="flex flex-col h-full justify-center text-center
         bg-white dark:bg-black dark:text-white
         "
         >
-          <h1 className="font-bold">
-            <span className="font-emoji">👋</span> Hello.
+          <h1 className="flex justify-center font-bold animate-[wave] text-3xl">
+            <span className="font-emoji transition-transform animate-[wave_3s_ease-in-out_infinite]">
+              👋
+            </span>{" "}
+            Hello.
           </h1>
         </div>
       </main>
