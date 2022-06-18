@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div className="relative flex min-h-screen w-full flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <div className="flex flex-col h-screen max-h-min">
       <Head>
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
@@ -15,9 +15,13 @@ const Home: NextPage = () => {
         ></script>
       </Head>
 
-      <main>
-        <div className="bg-white rounded-sm shadow-sm text-center flex mx-auto">
-          <h1 className="font-bold align-middle text-2xl self-center">
+      <main className="h-full">
+        <div
+          className=" flex flex-col h-full justify-center text-center
+        bg-white dark:bg-black dark:text-white
+        "
+        >
+          <h1 className="font-bold">
             <span className="font-emoji">👋</span> Hello.
           </h1>
         </div>
