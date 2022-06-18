@@ -3,7 +3,12 @@ import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col h-screen max-h-min">
+    <div
+      className="
+      flex flex-col h-screen max-h-min
+      lg:text-3xl md:text-lg sm:text-md
+    "
+    >
       <Head>
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
