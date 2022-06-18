@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         "
         >
           <h1 className="flex justify-center font-bold animate-[wave] text-3xl">
-            <span className="font-emoji transition-transform animate-[wave_3s_ease-in-out_infinite]">
+            <span className="font-emoji transition-transform animate-[wave_3s_ease-in]">
               👋
             </span>{" "}
             Hello.
