@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         emoji: ["Noto Emoji", "sans-serif"],
+        monospace: ["Berkeley Mono", "SF Mono", "monospace"],
       },
       keyframes: {
         wave: {
