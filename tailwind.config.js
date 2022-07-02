@@ -25,6 +25,12 @@ module.exports = {
           "60%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(0deg)" },
         },
+        fadeOut: {
+          "0%": { opacity: 1 },
+
+          "70%": { opacity: 0.8 },
+          "100%": { opacity: 0 },
+        },
       },
       animation: {
         wave: "wave 1s ease-in-out infinite",
