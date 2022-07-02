@@ -15,6 +15,7 @@ export async function getServerSideProps() {
   };
 }
 
+// @ts-ignore
 const Home: NextPage = ({ blog }) => {
   const [hidden, setHidden] = useState(false);
   console.log({
@@ -33,7 +34,7 @@ const Home: NextPage = ({ blog }) => {
         }, 4000);
       }
     }
-  });
+  }, [hidden]);
 
   return (
     <div

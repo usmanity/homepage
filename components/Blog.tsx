@@ -1,14 +1,17 @@
+// @ts-ignore
 export const Blog = ({ posts }) => {
   return (
     <div className="border m-auto my-2 w-3/5">
       <h1 className="border-b">Recent blog posts</h1>
       <div>
-        {posts.map((post) => {
+        {posts.map((post: any) => {
           return (
             <div
               className="flex text-left hover:cursor-pointer hover:opacity-50 transition-opacity"
+              key={post.id}
               onClick={() => {
-                location = post.url + "?referrer=homepage";
+                // @ts-ignore
+                window.location = post.url + "?referrer=homepage";
               }}
             >
               <div className="w-1/5 text-left pl-2">
