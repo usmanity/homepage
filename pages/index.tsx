@@ -71,10 +71,12 @@ const Home: NextPage = ({ blog }) => {
               Hello.
             </h1>
           </div>
-          <div className={`${!hidden ? "hidden" : ""} h-full transition-all`}>
+          <div
+            className={`${!hidden ? "hidden" : ""} transition-all flex px-4`}
+          >
             <About />
             <Contact />
-            <Blog />
+            <Blog posts={blog.items} />
           </div>
           {/* <div>
             {blog?.items &&
