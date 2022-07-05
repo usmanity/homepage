@@ -56,14 +56,14 @@ const Home: NextPage = ({ blog }) => {
 
       <main className="h-full transition-all">
         <div
-          className="flex flex-col h-full justify-center text-center
+          className="flex h-full justify-center items-center text-center
         bg-white dark:bg-black dark:text-white
         "
         >
           <div
             className={`${
               hidden ? "hidden" : ""
-            } h-full transition-all animate-[fadeOut_4s_ease-out] delay-1000`}
+            } items-center transition-all animate-[fadeOut_4s_ease-out] delay-1000`}
           >
             <h1 className="flex justify-center font-bold animate-[wave] text-3xl">
               <span className="font-emoji transition-transform animate-[wave_3s_ease-in]">
@@ -73,7 +73,9 @@ const Home: NextPage = ({ blog }) => {
             </h1>
           </div>
           <div
-            className={`${!hidden ? "hidden" : ""} transition-all flex px-4`}
+            className={`${
+              !hidden ? "hidden" : ""
+            } transition-all px-4 w-full flex flex-col md:flex-row align-top`}
           >
             <About />
             <Contact />
