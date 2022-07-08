@@ -51,8 +51,9 @@ const Home: NextPage = ({ blog }) => {
 
       <main className="transition-all">
         <div
-          className="flex justify-center items-center text-center max-h-min min-h-screen
-        bg-white dark:bg-black dark:text-white py-16
+          className="flex justify-center items-center text-center 
+          max-h-min sm:min-h-screen py-8 sm:py-0
+        bg-white dark:bg-black dark:text-white
         "
         >
           <div
