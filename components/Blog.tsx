@@ -17,7 +17,7 @@ export const Blog = ({ posts }) => {
                 window.location = post.url + "?referrer=homepage";
               }}
             >
-              <div className="w-1/4 text-left pl-2">
+              <div className="w-1/4 text-left pl-2 tabular-nums">
                 {post.date_published.split("T")[0]}
               </div>
               <div className="whitespace-nowrap text-ellipsis overflow-hidden w-3/4">
