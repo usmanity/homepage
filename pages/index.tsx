@@ -37,12 +37,7 @@ const Home: NextPage = ({ blog }) => {
   }, [hidden]);
 
   return (
-    <div
-      className="
-      flex flex-col h-screen max-h-min
-      motion-reduce:transition-none motion-reduce:hover:transform-none
-    "
-    >
+    <div className="motion-reduce:transition-none motion-reduce:hover:transform-none">
       <Head>
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
@@ -54,10 +49,10 @@ const Home: NextPage = ({ blog }) => {
         ></script>
       </Head>
 
-      <main className="h-full transition-all">
+      <main className="transition-all">
         <div
-          className="flex h-full justify-center items-center text-center
-        bg-white dark:bg-black dark:text-white
+          className="flex justify-center items-center text-center max-h-min min-h-screen
+        bg-white dark:bg-black dark:text-white py-16
         "
         >
           <div

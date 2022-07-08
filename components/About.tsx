@@ -1,6 +1,9 @@
 export const About = () => {
   return (
-    <div className="border m-auto md:w-1/3 md:mr-2 md:mt-0 w-full align-top">
+    <div
+      className="border w-full align-top 
+    m-auto md:w-1/3 md:mr-2 md:mt-0 my-4"
+    >
       <div className="flex border-b dark:bg-slate-800 h-8 items-center">
         <div className="w-full">About</div>
       </div>
