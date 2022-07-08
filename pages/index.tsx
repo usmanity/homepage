@@ -37,7 +37,7 @@ const Home: NextPage = ({ blog }) => {
   }, [hidden]);
 
   return (
-    <div className="motion-reduce:transition-none motion-reduce:hover:transform-none">
+    <div className="motion-reduce:transition-none motion-reduce:hover:transform-none text-sm md:text-base lg:text-lg">
       <Head>
         <title>Muhammad Usman — Homepage</title>
         <meta name="description" content="Homepage of Muhammad Usman" />
