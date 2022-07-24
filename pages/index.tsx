@@ -6,7 +6,7 @@ import { Blog } from "../components/Blog";
 import { Contact } from "../components/Contact";
 
 export async function getServerSideProps() {
-  const response = await fetch("https://blog.usmanity.com/feed/json");
+  const response = await fetch("https://blog.usmanity.com/feed/json/");
   const jsonResponse = await response.json();
   return {
     props: {
