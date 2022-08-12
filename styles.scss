@@ -1,5 +1,6 @@
 body {
-    font-family: sans-serif;
+    // a modified approach to sans-serif fonts
+    font-family: Inter, 'SF Compact', 'Segoe UI', Roboto, sans-serif;
 }
 container {
     max-width: calc(100vw - 20%);
