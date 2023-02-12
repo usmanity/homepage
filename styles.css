@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
   body {
     filter: invert(1);
-    background: #000; /* since most sites declare the background color */
+    background: #000;
   }
 }
 body {
@@ -46,4 +46,27 @@ li > a {
 .date {
   font-size: 12px;
   opacity: 0.7;
+  font-feature-settings: "tnum";
+}
+
+.projects ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+.projects ul li {
+  border: 1px solid blue;
+  border-radius: 12px;
+  padding: 1rem;
+}
+.projects ul li p {
+  margin: 0;
+  padding: 12px 0;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.projects ul date {
+  font-size: 0.8rem;
+  color: #636;
+  font-feature-settings: "tnum";
 }/*# sourceMappingURL=styles.css.map */
