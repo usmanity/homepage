@@ -54,12 +54,19 @@ li > a {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 16px;
 }
-.projects ul li {
+.projects ul a {
   border: 1px solid blue;
   border-radius: 12px;
   padding: 1rem;
+  width: calc(100% - 2rem);
+  text-decoration: none;
 }
-.projects ul li p {
+.projects ul a:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-color: green;
+}
+.projects ul a p {
   margin: 0;
   padding: 12px 0;
   font-size: 0.8rem;
