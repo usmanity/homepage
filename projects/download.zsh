@@ -32,3 +32,11 @@ done < download.json
 
 # Convert the array to a JSON array and save it to a new file
 echo "[${(j:,:)json_array}]" > projects.json
+
+sleep 3
+
+if [[ $(git status --porcelain) ]]; then
+  echo "Changes detected, running command..."
+  echo "Command to run"
+  git commit -am "Notion changes: updating at $(date +'%B %d, %Y %l:%M%P')"
+fi
