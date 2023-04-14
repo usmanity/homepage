@@ -39,4 +39,6 @@ if [[ $(git status --porcelain) ]]; then
   echo "Changes detected, running command..."
   echo "Command to run"
   git commit -am "Notion changes: updating at $(date +'%B %d, %Y %l:%M%P')"
+  git pull origin main
+  git push origin main
 fi
