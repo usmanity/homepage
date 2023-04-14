@@ -18,28 +18,45 @@
         background-size: 20px 20px;
       }
     </style>
+    <script>
+      fetch("/projects/projects.json").then((res) => {
+        res.json().then((p) => {
+          renderProjects(p);
+        });
+      });
+    </script>
   </head>
   <body>
     <div
       class="max-w-md sm:max-w-3xl mx-auto my-12 border rounded-lg bg-white p-8 shadow-md"
     >
       <h1 class="text-2xl font-bold">Projects</h1>
+      <div id="projects"></div>
+    </div>
+    <script>
+      function renderProjects(projects) {
+        const projectsDiv = document.getElementById("projects");
+        projectsDiv.innerHTML = `
+  <div>
+    ${projects
+      .map(
+        (project) => `
       <div class="lg:col-start-3 lg:row-end-1 mt-4">
-        <h2 class="sr-only">Bookends</h2>
+        <h2 class="sr-only">${project.name}</h2>
         <div class="rounded-lg bg-gray-50 shadow-sm ring-1 ring-gray-900/5">
           <dl class="flex flex-wrap">
             <div class="flex-auto pl-6 pt-6">
               <dt class="text-lg font-semibold leading-6 text-gray-900">
-                Bookends
+                ${project.name}
               </dt>
             </div>
             <div class="flex-none self-end px-6 pt-4">
-              <dt class="sr-only">Status</dt>
+              <dt class="sr-only">Tag</dt>
               <a
-                href="https://bookends.app"
+                href="${project.link}?ref=projects-page"
                 class="flex cursor-pointer rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-600 ring-1 ring-inset ring-green-600/20"
               >
-                bookends.app
+                ${project.link.split("//")[1]}
               </a>
             </div>
             <div class="mt-4 flex w-full flex-none gap-x-4 px-6">
@@ -62,15 +79,13 @@
               </dt>
               <dd class="text-sm leading-6 text-gray-500">
                 <p>
-                  A place to discover and track books. Built mainly as a pet
-                  project to learn Next.js, scratch my own itch of not being
-                  satisfied with alternatives.
+                  ${project.description}
                 </p>
               </dd>
             </div>
             <div class="mt-4 flex w-full flex-none gap-x-4 px-6">
               <dt class="flex-none">
-                <span class="sr-only">Dates</span>
+                <span class="sr-only">Started</span>
                 <svg
                   class="h-6 w-5 text-gray-400"
                   viewBox="0 0 20 20"
@@ -88,7 +103,7 @@
                 </svg>
               </dt>
               <dd class="text-sm leading-6 text-gray-500">
-                <time datetime="2023">2023</time>
+                <time datetime="${project.started}">${project.started}</time>
               </dd>
             </div>
             <div class="mt-4 flex w-full flex-none gap-x-4 px-6">
@@ -110,41 +125,25 @@
                 </svg>
               </dt>
               <dd class="text-sm leading-6 text-gray-500">
-                Actively being developed
+                ${project.status}
               </dd>
             </div>
-            <!-- <div class="mt-4 flex w-full flex-none gap-x-4 px-6">
-              <dt class="flex-none">
-                <span class="sr-only">Thoughts</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-6 text-gray-400"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
-                  />
-                </svg>
-              </dt>
-              <dd class="text-sm leading-6 text-gray-500">
-                You can read more about it here →
-              </dd>
-            </div> -->
           </dl>
           <div class="mt-6 border-t border-gray-900/5 px-6 py-6">
             <a
-              href="https://bookends.app"
+              href="${project.link}?ref=projects-page"
               class="text-sm font-semibold leading-6 text-gray-900"
               >Try it out <span aria-hidden="true">&rarr;</span></a
             >
           </div>
         </div>
       </div>
-    </div>
+    `
+      )
+      .join("")}
+  </div>
+`;
+      }
+    </script>
   </body>
 </html>
