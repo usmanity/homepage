@@ -51,4 +51,40 @@ function removeLoadingState() {
   el.classList.add("hidden");
 }
 
-loadBlogPosts();
+// loadBlogPosts();
+
+const rssToJSON = async (feedUrl) => {
+  try {
+    const response = await fetch(feedUrl, {
+      headers: {
+        "Access-Control-Allow-Origin": true,
+      },
+    });
+    const xmlText = await response.text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+    const items = xmlDoc.querySelectorAll("item");
+
+    const feedData = [];
+
+    items.forEach((item) => {
+      const itemData = {};
+
+      itemData.title = item.querySelector("title").textContent;
+      itemData.link = item.querySelector("link").textContent;
+      itemData.description = item.querySelector("description").textContent;
+      // Add more properties as needed
+
+      feedData.push(itemData);
+    });
+
+    const jsonData = JSON.stringify(feedData, null, 2);
+    console.log(jsonData);
+  } catch (error) {
+    console.error("Error converting RSS to JSON:", error);
+  }
+};
+
+// Replace 'rssFeedUrl' with the actual URL of the RSS feed you want to convert
+const rssFeedUrl = "https://blog.usmanity.com/rss";
+rssToJSON(rssFeedUrl);
