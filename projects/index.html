@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
+    <script
+      async
+      src="https://stats.usmanity.com/script.js"
+      data-website-id="ee3b1724-c4b3-4aa5-9b72-80be9dcfdba9"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
       body {
         background-image: linear-gradient(
             to right,
-            #b8a4ff24 1px,
+            #46387224 1px,
             transparent 1px
           ),
-          linear-gradient(to bottom, #b8a4ff24 1px, transparent 1px);
-        background-size: 20px 20px;
+          linear-gradient(to bottom, #46387224 1px, transparent 1px);
+        background-size: 40px 40px;
       }
     </style>
     <script>
@@ -26,9 +30,9 @@
       });
     </script>
   </head>
-  <body>
+  <body class="dark:bg-slate-900">
     <div
-      class="max-w-sm sm:max-w-3xl mx-auto my-12 border rounded-lg bg-white p-4 sm:p-8 shadow-md"
+      class="max-w-lg sm:max-w-3xl mx-auto my-12 border rounded-xl bg-white p-4 sm:p-8 dark:bg-slate-900/20 dark:border-slate-800 backdrop-blur-[2px] dark:text-white shadow-lg"
     >
       <h1 class="text-2xl font-bold">Projects</h1>
       <div id="projects"></div>
@@ -41,12 +45,12 @@
     ${projects
       .map(
         (project) => `
-      <div class="lg:col-start-3 lg:row-end-1 mt-4">
+      <div class="lg:col-start-3 lg:row-end-1 sm:mt-4 md:mt-6">
         <h2 class="sr-only">${project.name}</h2>
-        <div class="rounded-lg bg-gray-50 shadow-sm ring-1 ring-gray-900/5">
+        <div class="rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-white shadow-sm ring-1 ring-gray-900/5">
           <dl class="flex flex-wrap">
             <div class="flex-auto pl-6 pt-6">
-              <dt class="text-lg font-semibold leading-6 text-gray-900">
+              <dt class="text-lg font-semibold leading-6 text-gray-900 dark:text-gray-100">
                 ${project.name}
               </dt>
             </div>
@@ -54,7 +58,7 @@
               <dt class="sr-only">Tag</dt>
               <a
                 href="${project.link}?ref=projects-page"
-                class="flex cursor-pointer rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-600 ring-1 ring-inset ring-green-600/20"
+                class="flex cursor-pointer rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-600 ring-1 ring-inset ring-green-600/20 dark:bg-slate-700 dark:text-white"
               >
                 ${project.link.split("//")[1]}
               </a>
@@ -129,10 +133,10 @@
               </dd>
             </div>
           </dl>
-          <div class="mt-6 border-t border-gray-900/5 px-6 py-6">
+          <div class="mt-6 border-t border-gray-900/10 dark:border-gray-100/10 px-6 py-6">
             <a
               href="${project.link}?ref=projects-page"
-              class="text-sm font-semibold leading-6 text-gray-900"
+              class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200"
               >Try it out <span aria-hidden="true">&rarr;</span></a
             >
           </div>
