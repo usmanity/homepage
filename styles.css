@@ -98,6 +98,7 @@ li > a {
   padding: 0.6rem 1rem;
   width: calc(100% - 2rem);
   text-decoration: none;
+  line-height: 1.4rem;
 }
 .projects ul a:hover {
   cursor: pointer;
