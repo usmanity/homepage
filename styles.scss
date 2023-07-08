@@ -33,7 +33,7 @@ body {
 }
 container {
   max-width: calc(100vw - 20%);
-  width: 580px;
+  width: 600px;
   margin: auto;
   display: block;
   padding-top: 24px;
@@ -93,6 +93,8 @@ li > a {
       width: calc(100% - 2rem);
       text-decoration: none;
       line-height: 1.4rem;
+      display: flex;
+      align-items: center;
       &:hover {
         cursor: pointer;
         transition: all 0.2s ease-in-out;
@@ -107,3 +109,4 @@ li > a {
     }
   }
 }
+
