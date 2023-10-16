@@ -1,115 +1,24 @@
-:root {
-  --text-color: black;
-  --background-color: #fff;
-  --border-color: blue;
-  --hover-border-color: green;
-  --lighter-bg-color: #eee;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: white;
-    --background-color: #000;
-    --border-color: gray;
-    --hover-border-color: green;
-    --lighter-bg-color: #111;
-  }
-  .deer {
-    filter: invert(1);
-  }
-}
-body {
-  font-family: "p22-mackinac-pro", serif;
-  font-size: 20px;
-  line-height: 2.2em;
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-.hidden {
-  display: none;
-}
-
 container {
-  max-width: calc(100vw - 20%);
-  width: 600px;
-  margin: auto;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-radius: 23px;
+  width: 100%;
+  height: auto;
   display: block;
-  padding-top: 24px;
-  line-height: 2.4rem;
+  background-image: url("noise.png");
+  background-size: 33%;
+  background-repeat: repeat;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
-h2 {
-  margin: 48px auto 0;
-  padding: 0;
-  line-height: 20px;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 24px auto;
-}
-
-li > a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.date {
-  font-size: 12px;
-  opacity: 0.7;
-  font-feature-settings: "tnum";
-}
-
-.button {
-  border: 1px solid var(--border-color);
-  padding: 4px 12px;
-  border-radius: 20px;
-  float: right;
-  cursor: pointer;
-  text-decoration: none;
-}
-.button:hover {
-  border-color: green;
-  transition: all;
-  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: 200ms;
-}
-
-.deer {
-  margin-bottom: -4px;
-}
-
-.projects ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 12px;
-}
-.projects ul a {
-  border: 2px solid var(--border-color);
-  border-radius: 12px;
-  color: var(--text-color);
-  padding: 0.6rem 1rem;
-  width: calc(100% - 2rem);
-  text-decoration: none;
-  line-height: 1.4rem;
-  display: flex;
-  align-items: center;
-}
-.projects ul a:hover {
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  border-color: green;
-}
-.projects ul a p {
-  margin: 0;
-  padding: 12px 0;
-  font-size: 1rem;
-  line-height: 1.6rem;
+rounded {
+  border-radius: 2px;
+  min-width: 50%;
+  max-width: 500px;
+  min-height: 50px;
+  margin: 20px auto;
+  display: block;
+  background-color: rgba(250, 250, 250, 0.9);
+  border: 1px solid gray;
+  padding: 30px 18px;
 }/*# sourceMappingURL=styles.css.map */
