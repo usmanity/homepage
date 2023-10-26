@@ -11,7 +11,7 @@
   </div>
   <div class="list-of-channels mt-3">
     <Channel name="Github" color="slate" link="https://github.com/usmanity" />
-    <Channel name="Instagram" color="orange" link="https://instagram/usmanity" />
+    <Channel name="Instagram" color="orange" link="https://instagram.com/usmanity" />
     <Channel name="Tumblr" color="purple" link="https://photography.usmanity.com" />
     <Channel name="Youtube" color="red" link="https://www.youtube.com/@NookAndCompiler" />
   </div>
