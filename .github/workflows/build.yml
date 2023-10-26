@@ -1,46 +1,50 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: "main"
 
 jobs:
-  build:
+  build_site:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: 18
+          cache: npm
 
-      - name: Install dependencies and build
+      - name: Install dependencies
+        run: npm install
+
+      - name: build
+        env:
+          BASE_PATH: "/"
         run: |
-          npm install
           npm run build
+          touch build/.nojekyll
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: dist
-          path: ./dist
+          path: "build/"
 
   deploy:
-    needs: build
+    needs: build_site
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: dist
+    permissions:
+      pages: write
+      id-token: write
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
