@@ -6,9 +6,11 @@ export default {
       fontFamily: {
         heading: [
           "SF Pro Display",
-          "SF Pro",
-          "San Francisco",
+          "SF Pro Icons",
+          "Helvetica Neue",
           "Inter",
+          "Helvetica",
+          "Arial",
           "sans-serif",
         ],
         sans: ["SF Pro Text", "SF Pro", "San Francisco", "Inter", "sans-serif"],
