@@ -6,7 +6,7 @@
 
 </script>
 <div class="w-full items-center block py-6 px-4">
-  <div class="mx-auto max-w-2xl lg:max-w-5xl flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="mx-auto max-w-2xl lg:max-w-5xl flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-5">
     <div class="about-me-section">
       <AboutMe />
     </div>

@@ -3,7 +3,7 @@
     Hello.
   </h2>
   <p class="font-medium text-md text-gray-800 mt-1">
-    I'm Muhammad Usman. I currently live in Portland.</p>
+    I'm Muhammad Usman. <br/>I currently live in Portland, Oregon.</p>
   <p class="font-medium text-md text-gray-800">
     These days I'm working on NextJig.</p>
   <img src="/computer-guy.png" class="rounded-xl mt-4" alt="person using computer"/>

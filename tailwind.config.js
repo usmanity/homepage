@@ -7,13 +7,13 @@ export default {
         heading: [
           "SF Pro Display",
           "SF Pro Icons",
-          "Helvetica Neue",
           "Inter",
+          "Helvetica Neue",
           "Helvetica",
           "Arial",
           "sans-serif",
         ],
-        sans: ["SF Pro Text", "SF Pro", "San Francisco", "Inter", "sans-serif"],
+        sans: ["SF Pro Text", "SF Pro", "Inter", "sans-serif"],
       },
       letterSpacing: {
         justright: "0.012em",
