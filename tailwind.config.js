@@ -4,8 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["SF Pro Display", "Inter", "sans-serif"],
-        sans: ["SF Pro Text", "Inter", "sans-serif"],
+        heading: [
+          "SF Pro Display",
+          "SF Pro",
+          "San Francisco",
+          "Inter",
+          "sans-serif",
+        ],
+        sans: ["SF Pro Text", "SF Pro", "San Francisco", "Inter", "sans-serif"],
       },
       letterSpacing: {
         justright: "0.012em",
