@@ -22,6 +22,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@sveltejs/adapter-static": "^2.0.3"
+    "@sveltejs/adapter-static": "^2.0.3",
+    "svelte-routing": "^2.6.0"
   }
 }
