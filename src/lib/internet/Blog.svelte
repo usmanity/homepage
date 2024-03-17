@@ -10,7 +10,7 @@
   <div class="font-medium text-md text-gray-800 mt-1">
     I write about music, tools, keyboards, and many other things that have interested me over the years.
   </div>
-  <img src="/burrow-bunny.png" class="rounded-xl mt-4" alt="person using computer"/>
+  <img src="/mango.png" class="rounded-xl mt-4" alt="mango"/>
   <div class=" flex flex-row-reverse font-medium font-heading text-xl">
   <div class="rounded-full bg-green-400 hover:bg-green-600 cursor-pointer transition-colors
      text-white w-8 h-8 flex items-center justify-center text-center mt-3">

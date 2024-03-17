@@ -5,6 +5,6 @@
   <p class="font-medium text-md text-gray-800 mt-1">
     I'm Muhammad Usman. <br/>I currently live in Portland, Oregon.</p>
   <p class="font-medium text-md text-gray-800">
-    These days I'm working on NextJig.</p>
-  <img src="/computer-guy.png" class="rounded-xl mt-4" alt="person using computer"/>
+    These days, I work as a web developer at <a class="text-indigo-800 hover:decoration-1 hover:underline hover:decoration-solid hover:text-indigo-600" href="https://numeralhq.com/?ref=usmanity.com">Numeral</a>.</p>
+  <img src="/computer-guy-3.png" class="rounded-xl mt-4" alt="person using computer"/>
 </div>

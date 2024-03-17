@@ -10,12 +10,6 @@
     <div class="about-me-section">
       <AboutMe />
     </div>
-    <div class="logo-view-section">
-      <LogoView />
-    </div>
-    <div class="projects-section col-span-2">
-      <Projects />
-    </div>
     <div class="around-the-internet col-span-2">
       <TheInternet />
     </div>
