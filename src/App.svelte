@@ -3,7 +3,7 @@
 
 </script>
 
-<main class="bg-gray-100 min-h-screen">
+<main class="bg-gray-100 min-h-screen dark:bg-stone-900">
   <MainContent />
 </main>
 
