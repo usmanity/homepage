@@ -40,8 +40,8 @@ Disallow: /
 User-agent: YandexVideo
 Disallow: /
 
-User-agent: WallaBot
+User-agent: bingbot
 Disallow: /
 
-User-agent: TapuzBot
+User-agent: Yahoo! Slurp
 Disallow: /
