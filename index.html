@@ -47,7 +47,7 @@
             }
 
             .bio {
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
 
             h2 {
@@ -89,49 +89,78 @@
             section {
                 margin-bottom: 2rem;
             }
+            .links {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 2rem;
+            }
+            .links section {
+                margin-bottom: 0;
+            }
+            @media (max-width: 600px) {
+                .links {
+                    grid-template-columns: 1fr;
+                    gap: 0;
+                }
+                .links section {
+                    margin-bottom: 2rem;
+                }
+            }
         </style>
     </head>
     <body>
         <main>
             <h1>Muhammad Usman</h1>
             <p class="bio">
-                I'm a web developer based in Portland, Oregon.
-                <br />
-                You can check out my blog for recent updates.
+                I'm a web developer based in Portland, Oregon, tinkering with
+                small tools and writing about it here.
             </p>
 
-            <section>
-                <h2>Other places on the web</h2>
-                <ul>
-                    <li>
-                        <a href="https://blog.usmanity.com" class="external"
-                            >Blog</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://www.mhmd.us" class="external">
-                            Small utilities
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/usmanity" class="external"
-                            >Github</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="https://mastodon.sdf.org/@usmanity"
-                            class="external"
-                            >Mastodon</a
-                        >
-                    </li>
-                    <li>
-                        <a href="mailto:muhammad+fromhomepage@usmanity.com"
-                            >Email</a
-                        >
-                    </li>
-                </ul>
-            </section>
+            <div class="links">
+                <section>
+                    <h2>Writing &amp; projects</h2>
+                    <ul>
+                        <li>
+                            <a href="https://blog.usmanity.com" class="external"
+                                >Blog</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.mhmd.us" class="external">
+                                Small utilities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://projects.usmanity.com" class="external">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Elsewhere</h2>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/usmanity" class="external"
+                                >Github</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://mastodon.sdf.org/@usmanity"
+                                class="external"
+                                >Mastodon</a
+                            >
+                        </li>
+                        <li>
+                            <a href="mailto:muhammad+fromhomepage@usmanity.com"
+                                >Email</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
     </body>
 </html>
