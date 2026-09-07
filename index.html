@@ -106,6 +106,17 @@
                     margin-bottom: 2rem;
                 }
             }
+            ::selection {
+                background: #fce0ed;
+                color: #c90063;
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+                body,
+                a {
+                    cursor: url("public/cursor.svg") 4 3, auto;
+                }
+            }
         </style>
     </head>
     <body>
